@@ -1,0 +1,10 @@
+.Board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Board-tbody{
+  box-shadow: 5px 5px 30px rgb(255, 238, 0), -5px -5px 30px rgb(170, 0, 204);
+}

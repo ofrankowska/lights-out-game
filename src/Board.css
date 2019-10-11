@@ -35,6 +35,13 @@ table tr:last-child td:last-child {
 
 }
 
+.winner{
+  font-family: neon;
+  font-size: 15vw;
+  display: flex;
+
+}
+
 .neon-orange {
   color: #FB4264;
   line-height: 9vw;

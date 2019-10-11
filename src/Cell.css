@@ -2,6 +2,8 @@
   height: 100px;
   width: 100px;
   background-color: #222A31;
+  transition: background-color .5s ease;
+
 }
 
 .Cell-lit {

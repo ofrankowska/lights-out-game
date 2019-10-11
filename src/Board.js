@@ -84,14 +84,14 @@ class Board extends Component {
 
     // TODO: determine if the game has been won
     let hasWon = board.every(row => row.every(cell => !cell));
-    this.setState({board, hasWon});
+    this.setState({ board, hasWon });
   }
 
 
   /** Render game board or winning message. */
 
   render() {
-    if(this.state.hasWon){
+    if (this.state.hasWon) {
       return <h1>YOU WON!</h1>
     }
     let tableBoard = this.state.board.map((row, rowNum) =>
@@ -106,9 +106,15 @@ class Board extends Component {
     )
 
     return (
-      <table className="Board">
-        <tbody className="Board-tbody">{tableBoard}</tbody>
-      </table>
+      <div className="Board">
+        <div className="Board-title">
+          <div className="neon-orange">Lights</div>
+          <div className="neon-blue">Out</div>
+        </div>
+        <table >
+          <tbody className="Board-tbody">{tableBoard}</tbody>
+        </table>
+      </div>
     )
   }
 }
